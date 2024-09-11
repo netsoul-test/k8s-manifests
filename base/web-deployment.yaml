@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: 4e06a9e9-kr1-registry.container.nhncloud.com/ncr-for-web/nginx:20240911061127-b914cf9
+          image: 4e06a9e9-kr1-registry.container.nhncloud.com/ncr-for-web/nginx:20240911062042-2d3e41c
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
