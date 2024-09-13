@@ -3,6 +3,8 @@ kind: Kustomization
 resources:
 - web-deployment.yaml
 - web-service.yaml
+- was-deployment.yaml
+- was-service.yaml
 images:
 - name: 4e06a9e9-kr1-registry.container.nhncloud.com/ncr-for-web/nginx
   newTag: 20240911063140-1388dd9
