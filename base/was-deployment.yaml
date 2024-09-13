@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: was
+  namespace: default
+spec:
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 25%
+      maxSurge: 25%
+  revisionHistoryLimit: 0
+  replicas: 2
+  selector:
+    matchLabels:
+      app: was
+  template:
+    metadata:
+      labels:
+        app: was
+    spec:
+      containers:
+        - name: was
+          image: 4e06a9e9-kr1-registry.container.nhncloud.com/ncr-for-web/was:20240913010305-4699101
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+      imagePullSecrets:
+        - name: nhn-ncr-secret
