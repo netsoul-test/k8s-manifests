@@ -5,4 +5,4 @@ resources:
 - web-service.yaml
 images:
 - name: 4e06a9e9-kr1-registry.container.nhncloud.com/ncr-for-web/nginx
-  newTag: 20240919003459-976ea28
+  newTag: 20240919003728-976ea28
