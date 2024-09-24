@@ -13,7 +13,7 @@ required_version = ">= 1.0.0"
 provider "nhncloud" {
   user_name   = "giun@netsoultech.com"
   tenant_id   = "b2478be0b666477d9124b983c57cdae1"
-  password    = "1234"
+  password    = var.password
   auth_url    = "https://api-identity-infrastructure.nhncloudservice.com/v2.0"
   region      = "KR1"
 }
