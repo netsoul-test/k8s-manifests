@@ -15,5 +15,5 @@ provider "nhncloud" {
   tenant_id   = "b2478be0b666477d9124b983c57cdae1"
   password    = var.password
   auth_url    = "https://api-identity-infrastructure.nhncloudservice.com/v2.0"
-  region      = var.region
+  region      = "KR2"
 }
